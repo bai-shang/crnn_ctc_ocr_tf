@@ -1,4 +1,4 @@
-# OCR_TF_CRNN_CTC
+# crnn_ctc_ocr.Tensorflow
 This software implements the Convolutional Recurrent Neural Network (CRNN), a combination of CNN, RNN and CTC loss for image-based sequence recognition tasks, such as scene text recognition and OCR.  
 
 "An End-to-End Trainable Neural Network for Image-based Sequence Recognition and Its Application to Scene Text Recognition" : https://arxiv.org/abs/1507.05717  
@@ -20,9 +20,9 @@ Note: This software cannot run in the tensorflow lastest version r1.11.0 since i
 
 # Run demo
 
-Asume your current work directory is OCR_TF_CRNN_CTC：
+Asume your current work directory is "crnn_ctc_ocr.Tensorflow"：
 ```bash
-cd path/to/your/OCR_TF_CRNN_CTC/
+cd path/to/your/crnn_ctc_ocr.Tensorflow/
 ```
 Dowload pretrained model and extract it to your disc:  [GoogleDrive](https://drive.google.com/file/d/1A3V7o3SKSiL3IHcTqc1jP4w58DuC8F9o/view?usp=sharing) .   
 
