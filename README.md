@@ -102,4 +102,4 @@ python tools/eval_crnn_ctc.py --data_dir ./tfrecords/ --model_dir ./model/ 2>/de
 
 # Reference
 
-The crnn+seq2seq+attention ocr can be found here [bai-shang/crnn_seq2seq_ocr.Pytorch](https://github.com/bai-shang/crnn_seq2seq_ocr.Pytorch/blob/master/data/start_train.jpg?raw=true).
+The crnn+seq2seq+attention ocr can be found here [bai-shang/crnn_seq2seq_ocr.Pytorch](https://github.com/bai-shang/crnn_ctc_ocr.Tensorflow).
