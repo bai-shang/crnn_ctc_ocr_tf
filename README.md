@@ -6,7 +6,8 @@ This software implements the Convolutional Recurrent Neural Network (CRNN), a co
 More details for CRNN and CTC loss (in chinese): https://zhuanlan.zhihu.com/p/43534801
 
 # Dependencies
-All dependencies should be installed are as follow:  
+All dependencies should be installed are as follow: 
+* Python2.7 or Python3
 * tensorflow==1.8.0
 * opencv-python
 * numpy
