@@ -3,7 +3,9 @@ This software implements the Convolutional Recurrent Neural Network (CRNN), a co
 
 "An End-to-End Trainable Neural Network for Image-based Sequence Recognition and Its Application to Scene Text Recognition" : https://arxiv.org/abs/1507.05717  
 
-More details for CRNN and CTC loss (in chinese): https://zhuanlan.zhihu.com/p/43534801
+More details for CRNN and CTC loss (in chinese): https://zhuanlan.zhihu.com/p/43534801   
+
+***The crnn+seq2seq+attention ocr code can be found here [bai-shang/crnn_seq2seq_ocr.PyTorch](https://github.com/bai-shang/crnn_seq2seq_ocr.PyTorch)***
 
 # Dependencies
 All dependencies should be installed are as follow: 
@@ -99,7 +101,3 @@ During my experiment the loss drops as follow:
 ```bash
 python tools/eval_crnn_ctc.py --data_dir ./tfrecords/ --model_dir ./model/ 2>/dev/null
 ```
-
-# Reference
-
-The crnn+seq2seq+attention ocr code can be found here [bai-shang/crnn_seq2seq_ocr.PyTorch](https://github.com/bai-shang/crnn_seq2seq_ocr.PyTorch).
