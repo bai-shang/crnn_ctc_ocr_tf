@@ -5,6 +5,8 @@ This software implements the Convolutional Recurrent Neural Network (CRNN), a co
 
 More details for CRNN and CTC loss (in chinese): https://zhuanlan.zhihu.com/p/43534801   
 
+![](https://github.com/bai-shang/crnn_ctc_ocr.Tensorflow/blob/master/Arch.jpg?raw=true)
+
 ***The crnn+seq2seq+attention ocr code can be found here [bai-shang/crnn_seq2seq_ocr.PyTorch](https://github.com/bai-shang/crnn_seq2seq_ocr.PyTorch)***
 
 # Dependencies
