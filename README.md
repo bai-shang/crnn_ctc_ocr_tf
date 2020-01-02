@@ -1,17 +1,17 @@
-# crnn_ctc_ocr.Tensorflow
+# crnn_ctc_ocr_tf
 This software implements the Convolutional Recurrent Neural Network (CRNN), a combination of CNN, RNN and CTC loss for image-based sequence recognition tasks, such as scene text recognition and OCR.  
 
 An End-to-End Trainable Neural Network for Image-based Sequence Recognition and Its Application to Scene Text Recognition: https://arxiv.org/abs/1507.05717  
 
 More details for CRNN and CTC loss (in chinese): https://zhuanlan.zhihu.com/p/43534801   
 
-![](https://github.com/bai-shang/crnn_ctc_ocr.Tensorflow/blob/master/Arch.jpg?raw=true)
+![](https://github.com/bai-shang/crnn_ctc_ocr_tf/blob/master/Arch.jpg?raw=true)
 
-***The crnn+seq2seq+attention ocr code can be found here [bai-shang/crnn_seq2seq_ocr.PyTorch](https://github.com/bai-shang/crnn_seq2seq_ocr.PyTorch)***
+***The crnn+seq2seq+attention ocr code can be found here [bai-shang/crnn_seq2seq_ocr_pytorch](https://github.com/bai-shang/crnn_seq2seq_ocr_pytorch)***
 
 # Dependencies
 All dependencies should be installed are as follow: 
-* Python2.7 or Python3
+* Python
 * tensorflow==1.8.0
 * opencv-python
 * numpy
@@ -25,9 +25,9 @@ Note: This software cannot run in the tensorflow lastest version r1.11.0 since i
 
 # Run demo
 
-Asume your current work directory is "crnn_ctc_ocr.Tensorflow"：
+Asume your current work directory is "crnn_ctc_ocr_tf"：
 ```bash
-cd path/to/your/crnn_ctc_ocr.Tensorflow/
+cd path/to/your/crnn_ctc_ocr_tf/
 ```
 Dowload pretrained model and extract it to your disc:  [GoogleDrive](https://drive.google.com/file/d/1A3V7o3SKSiL3IHcTqc1jP4w58DuC8F9o/view?usp=sharing) .   
 
@@ -49,11 +49,11 @@ Result is:
 ```
 Predict 1_AFTERSHAVE_1509.jpg image as: aftershave
 ```
-![1_AFTERSHAVE_1509.jpg](https://github.com/bai-shang/crnn_ctc_ocr.Tensorflow/blob/master/test_data/images/1_AFTERSHAVE_1509.jpg)
+![1_AFTERSHAVE_1509.jpg](https://github.com/bai-shang/crnn_ctc_ocr_tf/blob/master/test_data/images/1_AFTERSHAVE_1509.jpg)
 ```
 Predict 2_LARIAT_43420.jpg image as: lariat
 ```
-![2_LARIAT_43420](https://github.com/bai-shang/crnn_ctc_ocr.Tensorflow/blob/master/test_data/images/2_LARIAT_43420.jpg)
+![2_LARIAT_43420](https://github.com/bai-shang/crnn_ctc_ocr_tf/blob/master/test_data/images/2_LARIAT_43420.jpg)
 
 # Train a new model
 
@@ -94,10 +94,10 @@ python tools/train_crnn_ctc.py --data_dir ./tfrecords/ --model_dir ./model/ --ba
 ```
 After several times of iteration you can check the output in terminal as follow:  
 
-![](https://github.com/bai-shang/CRNN_CTC_Tensorflow/blob/master/data/20180919022202.png?raw=true)
+![](https://github.com/bai-shang/crnn_ctc_ocr_tf/blob/master/data/20180919022202.png?raw=true)
 
 During my experiment the loss drops as follow:
-![](https://github.com/bai-shang/CRNN_CTC_Tensorflow/blob/master/data/20180919202432.png?raw=true)
+![](https://github.com/bai-shang/crnn_ctc_ocr_tf/blob/master/data/20180919202432.png?raw=true)
 
 ### Evaluate model
 ```bash
