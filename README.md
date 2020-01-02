@@ -58,7 +58,7 @@ Predict 2_LARIAT_43420.jpg image as: lariat
 # Train a new model
 
 ### Data Preparation
-* Firstly you need to download [Synth90k](http://www.robots.ox.ac.uk/~vgg/data/text/) dataset and extract it into a folder.   
+* Firstly you need download [Synth90k](http://www.robots.ox.ac.uk/~vgg/data/text/) datasets and extract it into a folder.   
 
 * Secondly supply a txt file to specify the relative path to the image data dir and it's corresponding text label.   
 
@@ -67,19 +67,19 @@ For example: image_list.txt
 90kDICT32px/1/2/373_coley_14845.jpg coley
 90kDICT32px/17/5/176_Nevadans_51437.jpg nevadans
 ```
-* Then you are suppose to convert your dataset into tensorflow records which can be done by
+* Then you suppose to convert your dataset to tfrecord format can be done by
 ```bash
 python tools/create_crnn_ctc_tfrecord.py \
   --image_dir path/to/90kDICT32px/ --anno_file path/to/image_list.txt --data_dir ./tfrecords/ \
   --validation_split_fraction 0.1
 ```
-Note: make sure that images can be read from the path you specificed, such as:
+Note: make sure that images can be read from the path you specificed. For example:
 ```bash
 path/to/90kDICT32px/1/2/373_coley_14845.jpg
 path/to/90kDICT32px/17/5/176_Nevadans_51437.jpg
 .......
 ```
-All training image will be scaled into height 32 and write to tfrecord file.  
+All training images will be scaled into height 32pix and write to tfrecord file.  
 The dataset will be divided into train and validation set and you can change the parameter to control the ratio of them.
 
 #### Otherwise you can use the dowload_synth90k_and_create_tfrecord.sh script automatically create tfrecord:
