@@ -12,7 +12,7 @@ More details for CRNN and CTC loss (in chinese): https://zhuanlan.zhihu.com/p/43
 # Dependencies
 All dependencies should be installed are as follow: 
 * Python
-* tensorflow==1.8.0
+* tensorflow
 * opencv-python
 * numpy
 
