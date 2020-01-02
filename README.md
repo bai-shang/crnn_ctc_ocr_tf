@@ -1,7 +1,7 @@
 # crnn_ctc_ocr.Tensorflow
 This software implements the Convolutional Recurrent Neural Network (CRNN), a combination of CNN, RNN and CTC loss for image-based sequence recognition tasks, such as scene text recognition and OCR.  
 
-"An End-to-End Trainable Neural Network for Image-based Sequence Recognition and Its Application to Scene Text Recognition" : https://arxiv.org/abs/1507.05717  
+An End-to-End Trainable Neural Network for Image-based Sequence Recognition and Its Application to Scene Text Recognition: https://arxiv.org/abs/1507.05717  
 
 More details for CRNN and CTC loss (in chinese): https://zhuanlan.zhihu.com/p/43534801   
 
@@ -49,11 +49,11 @@ Result is:
 ```
 Predict 1_AFTERSHAVE_1509.jpg image as: aftershave
 ```
-![1_AFTERSHAVE_1509.jpg](https://github.com/bai-shang/CRNN_CTC_Tensorflow/blob/master/test_data/images/1_AFTERSHAVE_1509.jpg?raw=true)
+![1_AFTERSHAVE_1509.jpg](https://github.com/bai-shang/crnn_ctc_ocr.Tensorflow/blob/master/test_data/images/1_AFTERSHAVE_1509.jpg)
 ```
 Predict 2_LARIAT_43420.jpg image as: lariat
 ```
-![2_LARIAT_43420](https://github.com/bai-shang/CRNN_CTC_Tensorflow/blob/master/test_data/images/2_LARIAT_43420.jpg?raw=true)
+![2_LARIAT_43420](https://github.com/bai-shang/crnn_ctc_ocr.Tensorflow/blob/master/test_data/images/2_LARIAT_43420.jpg)
 
 # Train a new model
 
