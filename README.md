@@ -11,7 +11,7 @@ More details for CRNN and CTC loss (in chinese): https://zhuanlan.zhihu.com/p/43
 
 # Dependencies
 All dependencies should be installed are as follow: 
-* Python
+* Python3
 * tensorflow
 * opencv-python
 * numpy
@@ -40,7 +40,7 @@ export PYTHONPATH=$PYTHONPATH:./
 Run inference demo:
 
 ```bash
-python tools/inference_crnn_ctc.py \
+python3 tools/inference_crnn_ctc.py \
   --image_dir ./test_data/images/ --image_list ./test_data/image_list.txt \
   --model_dir /path/to/your/bs_synth90k_model/ 2>/dev/null
 ```
@@ -69,7 +69,7 @@ For example: image_list.txt
 ```
 * Then you suppose to convert your dataset to tfrecord format can be done by
 ```bash
-python tools/create_crnn_ctc_tfrecord.py \
+python3 tools/create_crnn_ctc_tfrecord.py \
   --image_dir path/to/90kDICT32px/ --anno_file path/to/image_list.txt --data_dir ./tfrecords/ \
   --validation_split_fraction 0.1
 ```
@@ -90,7 +90,7 @@ sh dowload_synth90k_and_create_tfrecord.sh
 
 ### Train model
 ```bash
-python tools/train_crnn_ctc.py --data_dir ./tfrecords/ --model_dir ./model/ --batch_size 32
+python3 tools/train_crnn_ctc.py --data_dir ./tfrecords/ --model_dir ./model/ --batch_size 32
 ```
 After several times of iteration you can check the output in terminal as follow:  
 
@@ -101,5 +101,5 @@ During my experiment the loss drops as follow:
 
 ### Evaluate model
 ```bash
-python tools/eval_crnn_ctc.py --data_dir ./tfrecords/ --model_dir ./model/ 2>/dev/null
+python3 tools/eval_crnn_ctc.py --data_dir ./tfrecords/ --model_dir ./model/ 2>/dev/null
 ```
