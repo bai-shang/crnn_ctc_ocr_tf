@@ -18,7 +18,7 @@ All dependencies should be installed are as follow:
 
 Required packages can be installed with
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```    
 
 Note: This software cannot run in the tensorflow lastest version r1.11.0 since it's modified the tf.contrib.rnn API.
