@@ -14,7 +14,7 @@ find ./mnt/ | xargs ls -d | grep jpg > image_list_all.txt
 cat image_list_all.txt | head -n ${COUNT} > image_list.txt
 
 # create tfrecord
-python create_synth90k_tfrecord.py --image_dir '' --anno_file ./image_list.txt --char_map_json_file ../char_map/char_map.json
+python3 create_synth90k_tfrecord.py --image_dir '' --anno_file ./image_list.txt --char_map_json_file ../char_map/char_map.json
 
 
 
