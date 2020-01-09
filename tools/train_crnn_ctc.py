@@ -140,7 +140,7 @@ def _train_crnn_ctc():
 
     ctc_loss = tf.reduce_mean(
         tf.nn.ctc_loss(labels=input_labels, inputs=net_out, sequence_length=input_sequence_lengths,
-            ignore_longer_outputs_than_inputs=True))
+            preprocess_collapse_repeated=True, ignore_longer_outputs_than_inputs=True))
 
     ctc_decoded, ct_log_prob = tf.nn.ctc_beam_search_decoder(net_out, input_sequence_lengths, merge_repeated=False)
 
