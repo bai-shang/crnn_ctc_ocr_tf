@@ -1,7 +1,7 @@
 # crnn_ctc_ocr_tf
 This software implements the Convolutional Recurrent Neural Network (CRNN), a combination of CNN, RNN and CTC loss for image-based sequence recognition tasks, such as scene text recognition and OCR.  
 
-An End-to-End Trainable Neural Network for Image-based Sequence Recognition and Its Application to Scene Text Recognition: https://arxiv.org/abs/1507.05717  
+https://arxiv.org/abs/1507.05717  
 
 More details for CRNN and CTC loss (in chinese): https://zhuanlan.zhihu.com/p/43534801   
 
