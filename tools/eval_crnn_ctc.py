@@ -170,7 +170,7 @@ def _eval_crnn_ctc():
                             accuracy.append(0)
 
             for index, img in enumerate(imgs):
-                print('Predict {:s} image with gt label: {:s} <--> predict label: {:s}'.format(names[index], lbls[index], preds[index]))
+                print('Predict {:s} image with gt label: {:s} <--> predict label: {:s}'.format(str(names[index]), str(lbls[index]), str(preds[index])))
         
         accuracy = np.mean(np.array(accuracy).astype(np.float32), axis=0)
         print('Mean test accuracy is {:5f}'.format(accuracy))
