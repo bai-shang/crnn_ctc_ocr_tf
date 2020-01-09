@@ -21,7 +21,7 @@ Required packages can be installed with
 pip3 install -r requirements.txt
 ```    
 
-Note: This software cannot run in the tensorflow lastest version r1.11.0 since it's modified the tf.contrib.rnn API.
+Note: This code cannot run on the tensorflow2.0 since it's modified the 'tf.nn.ctc_loss' API.
 
 # Run demo
 
