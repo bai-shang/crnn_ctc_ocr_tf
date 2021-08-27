@@ -56,7 +56,7 @@ class CRNNCTCNetwork(object):
             stack_lstm_layer, _, _ = rnn.stack_bidirectional_dynamic_rnn(
                 fw_cell_list, bw_cell_list, input_tensor, sequence_length=input_sequence_length, dtype=tf.float32)
 
-            [batch_size, _, hidden_num] = input_tensor.get_shape().as_list()
+            [batch_size, _, hidden_num] = stack_lstm_layer.get_shape().as_list()
             rnn_reshaped = tf.reshape(stack_lstm_layer, [-1, hidden_num])
 
             # Doing the affine projection
